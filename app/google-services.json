@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "111318758689",
+    "firebase_url": "https://carshop-a9d4b.firebaseio.com",
+    "project_id": "carshop-a9d4b",
+    "storage_bucket": "carshop-a9d4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111318758689:android:5dfb9115492a8355",
+        "android_client_info": {
+          "package_name": "com.example.carshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111318758689-q1740sp1tuqfvahisfaug4n4gu4evsai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJn6oBWCwZ1yZKrkFpnIsgBGI4UBlM0do"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
