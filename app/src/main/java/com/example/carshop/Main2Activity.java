@@ -12,6 +12,7 @@ import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.firebase.client.Firebase;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -41,6 +42,7 @@ public class Main2Activity extends AppCompatActivity {
     private Firebase mRootRef;
     DatabaseReference databaseReference;
     FirebaseDatabase database ;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -135,15 +137,22 @@ public class Main2Activity extends AppCompatActivity {
         }else{
 
             //String id=  databaseReference.push().getKey();
+
+
+
+
+
             Cars cars = new Cars(Brand,Model,Year,Mileage,Fuel,Type,Power,Price);
-            mRef.child(Brand).child("Brand").setValue(Brand.toString());
-            mRef.child(Brand).child("Model").setValue(Model.toString());
-            mRef.child(Brand).child("Brand").setValue(Year.toString());
-            mRef.child(Brand).child("Mileage").setValue(Mileage.toString());
-            mRef.child(Brand).child("Fuel").setValue(Fuel.toString());
-            mRef.child(Brand).child("Type").setValue(Type.toString());
-            mRef.child(Brand).child("Power").setValue(Power.toString());
-            mRef.child(Brand).child("Price").setValue(Price.toString());
+          //  var aa = mRef.push();
+            String mid = mRef.push().getKey();
+            mRef.child(mid).child("Brand").setValue(Brand.toString());
+            mRef.child(mid).child("Model").setValue(Model.toString());
+            mRef.child(mid).child("Brand").setValue(Year.toString());
+            mRef.child(mid).child("Mileage").setValue(Mileage.toString());
+            mRef.child(mid).child("Fuel").setValue(Fuel.toString());
+            mRef.child(mid).child("Type").setValue(Type.toString());
+            mRef.child(mid).child("Power").setValue(Power.toString());
+            mRef.child(mid).child("Price").setValue(Price.toString());
 
 
 
